@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-foley-studio"
+version = "1.0.0"
+description = "Unified Procedural Sound Design & AI Foley Studio for Motion Design, Video Production and Cinema"
+readme = "README.md"
+authors = [{ name = "Ricardobul" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+]
+
+[project.scripts]
+audio-foley = "audio_foley_studio.cli:main"

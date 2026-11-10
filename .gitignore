@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Audio and models
+*.wav
+*.mp3
+*.flac
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# Nested cloned AI models
+ai_models/audiocraft/
+ai_models/foleycrafter/
+ai_models/t-foley/
+ai_models/*/.git
+ai_models/*/__pycache__
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
