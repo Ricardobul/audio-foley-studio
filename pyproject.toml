@@ -8,13 +8,7 @@ version = "1.0.0"
 description = "Unified Procedural Sound Design & AI Foley Studio for Motion Design, Video Production and Cinema"
 readme = "README.md"
 authors = [{ name = "Ricardobul" }]
-license = { text = "MIT" }
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
-]
+license = "MIT"
 dependencies = [
     "numpy>=1.24.0",
     "scipy>=1.10.0",
@@ -22,3 +16,6 @@ dependencies = [
 
 [project.scripts]
 audio-foley = "audio_foley_studio.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["audio_foley_studio*"]

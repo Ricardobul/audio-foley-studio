@@ -1,5 +1,6 @@
 r"""
 Acoustic Room & Impulse Response (IR) Convolution Engine
+Inspired by Spotify's Pedalboard and real acoustic impulse responses.
 Removes dry 'computerized' sound artifacts by placing procedural audio
 inside a realistic physical acoustic space using FFT convolution.
 """
@@ -7,6 +8,12 @@ inside a realistic physical acoustic space using FFT convolution.
 import numpy as np
 from scipy import signal
 from scipy.io import wavfile
+
+try:
+    import pedalboard
+    HAS_PEDALBOARD = True
+except ImportError:
+    HAS_PEDALBOARD = False
 
 SR = 48000
 

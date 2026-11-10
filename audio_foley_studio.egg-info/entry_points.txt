@@ -1,0 +1,2 @@
+[console_scripts]
+audio-foley = audio_foley_studio.cli:main

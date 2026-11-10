@@ -144,6 +144,18 @@ The library includes connectors to three premier open-source and API generative 
 
 ---
 
+## 📚 Algorithmic Foundations & Integrated Open-Source Work
+
+Audio Foley Studio directly incorporates and mathematically implements the physical models pioneered by the open-source audio research community:
+
+* **[bineferg/thunder-synthesis](https://github.com/bineferg/thunder-synthesis)**: Integrated in `synthesize_thunder()` for atmospheric non-linear wave propagation, supersonic shockwave crackles, and multi-stage rolling cloud rebounds.
+* **[lucasw/tao_synth](https://github.com/lucasw/tao_synth)**: Physical modeling of 2D anisotropic plates and vibrating wood membranes, integrated in `synthesize_door_knock()` and `synthesize_impact()`.
+* **[OlyMarco/Footstep-Sound-Demo](https://github.com/OlyMarco/Behaviourally-based-Synthesis-of-Scene-aware-Footstep-Sound-Demo)**: Locomotion mechanics, heel-strike impulse, forward sole-roll friction delays, and surface acoustic impedance across wood, concrete, gravel, and water integrated in `synthesize_footsteps()`.
+* **[Spotify/pedalboard](https://github.com/spotify/pedalboard)**: Acoustic Impulse Response (IR) Convolution architecture, integrated via native high-performance FFT convolution in `convolution.py` (with optional direct `pedalboard` hooks) to give synthesized audio the warmth and spatial depth of real physical rooms.
+* **Andy Farnell's *Designing Sound* (MIT Press)**: Foundational acoustic equations for Minnaert cavitation fluid droplets, Poisson rain fields, and aerodynamic turbulence whooshes.
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).

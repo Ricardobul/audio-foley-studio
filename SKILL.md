@@ -9,8 +9,12 @@ Unified Procedural Sound Design & AI Foley Studio for Motion Design, Video Editi
 
 This skill consolidates **5 audio design disciplines** into a single autonomous engine:
 1. **Procedural Motion SFX**: Aerodynamic stereo whooshes, exponential tension risers, trailer sub-booms, reverse suck-backs, and sci-fi digital glitches.
-2. **Physical Foley Modeling**: Acoustic modeling based on Andy Farnell's *Designing Sound* (bio-mechanical footsteps across 4 surfaces, supersonic lightning thunder with atmospheric dispersion, knuckle-on-wood door knocks, Minnaert cavitation drops, and stochastic Poisson rain).
-3. **Acoustic Room Convolution**: Impulse Response (IR) FFT convolution engine that places dry procedural audio inside real room acoustics (booth, studio, corridor, hall), eliminating synthetic artifacts.
+2. **Physical Foley Modeling**: Acoustic modeling integrating:
+   - **bineferg/thunder-synthesis**: Supersonic lightning shockwave and rolling cloud rumble.
+   - **lucasw/tao_synth**: 2D wood plate membrane and knuckle impact physics.
+   - **OlyMarco/Footstep-Sound-Demo**: Locomotion mechanics, heel-strike, sole-roll friction across wood, gravel, concrete, and water.
+   - **Andy Farnell's Designing Sound**: Minnaert cavitation fluid droplets and stochastic Poisson rain fields.
+3. **Acoustic Room Convolution (Spotify/pedalboard inspired)**: Impulse Response (IR) FFT convolution engine that places dry procedural audio inside real room acoustics (booth, studio, corridor, hall), eliminating synthetic artifacts.
 4. **AI Foley Triad Bridge**:
    - **Meta AudioCraft / AudioGen**: Local offline Text-to-SFX neural synthesis.
    - **FoleyCrafter**: Video-to-Foley neural model that watches video frames and generates synchronized audio onsets.

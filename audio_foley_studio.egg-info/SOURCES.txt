@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+audio_foley_studio/__init__.py
+audio_foley_studio/ai_router.py
+audio_foley_studio/cli.py
+audio_foley_studio/convolution.py
+audio_foley_studio/dsp_engine.py
+audio_foley_studio/timeline_sync.py
+audio_foley_studio.egg-info/PKG-INFO
+audio_foley_studio.egg-info/SOURCES.txt
+audio_foley_studio.egg-info/dependency_links.txt
+audio_foley_studio.egg-info/entry_points.txt
+audio_foley_studio.egg-info/requires.txt
+audio_foley_studio.egg-info/top_level.txt
